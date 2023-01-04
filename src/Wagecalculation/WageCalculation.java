@@ -11,15 +11,15 @@ public class WageCalculation {
         switch (emp_check) {
             case 0:
                 System.out.println("Employee is Present");
-                System.out.println("Daily Wage of the Employee = " + wage_perhour * full_day);
+                System.out.println("Monthly Wage of the Employee = " + wage_perhour * full_day * 20);
                 break;
             case 1:
                 System.out.println("Employee is present but is working part-time");
-                System.out.println("Daily Wage of the Part-time Employee = " + part_time * wage_perhour);
+                System.out.println("Monthly Wage of the Part-time Employee = " + part_time * wage_perhour * 20);
                 break;
             default:
                 System.out.println("Employee is Absent");
-                System.out.println("Daily Wage of the Employee = 0");
+                System.out.println("Monthly Wage of the Employee = 0");
                 break;
         }
 
